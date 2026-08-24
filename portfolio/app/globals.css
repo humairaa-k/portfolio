@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  /* Accent colors — used sparingly (headings, blobs, CTAs, hover states) */
+  --color-pink: #FB6F92;
+  --color-pink-light: #F9A8C2;
+  --color-sage: #7FB4A2;
+
+  /* Raw palette — the actual hex values behind bg/fg/surface */
+  --color-ink: #0B0B0D;
+  --color-surface-dark: #1A1A1D;
+  --color-offwhite: #F5F1EA;
+  --color-paper: #FDFBF9;
+  --color-surface-light: #F3F1EE;
+
+  /* Semantic tokens — exposed as Tailwind utilities (bg-bg, text-fg, etc.) */
+  --color-bg: var(--color-bg);
+  --color-fg: var(--color-fg);
+  --color-surface: var(--color-surface);
+  --color-border: var(--color-border);
+}
+
+:root {
+  --color-bg: var(--color-ink);
+  --color-fg: var(--color-offwhite);
+  --color-surface: var(--color-surface-dark);
+  --color-border: rgba(245, 241, 234, 0.1);
+}
+
+.light {
+  --color-bg: var(--color-paper);
+  --color-fg: var(--color-ink);
+  --color-surface: var(--color-surface-light);
+  --color-border: rgba(11, 11, 13, 0.1);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
