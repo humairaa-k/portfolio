@@ -30,7 +30,7 @@ export default function Navbar() {
 
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 px-14 py-4 transition-all duration-300
+    <header className={` nav-bg fixed top-0 left-0 right-0 z-50 px-14 py-4 transition-all duration-300
       ${ isScrolled 
       ? "bg-surface/80 backdrop-blur-md border-b border-border"
       : "bg-transparent border-b border-transparent"}`}
@@ -42,7 +42,7 @@ export default function Navbar() {
                alt="Humaira Logo"
                width={380}
                height={94}
-               className="h-18 w-auto"
+               className="h-17 w-auto"
                priority
              />
 
