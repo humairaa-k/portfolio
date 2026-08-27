@@ -166,3 +166,27 @@ body {
   left: -10%;
   background: var(--shell-glow-b);
 }
+
+
+@layer components {
+  .hero__social {
+    @apply flex gap-3 mt-7;
+  }
+
+  .hero__social a {
+    @apply grid h-10 w-10 place-items-center rounded-full border transition-[border-color,transform] duration-[160ms] transition-all ease-in-out;
+    border-color: var(--color-border);
+    background: var(--surface-muted);
+    color: var(--color-fg);
+  }
+
+  .hero__social a:hover {
+    border-color: rgba(251, 111, 146, 0.5);
+    @apply -translate-y-0.5;
+
+  }
+
+  .social-link svg {
+    @apply block h-4 w-4;
+  }
+}

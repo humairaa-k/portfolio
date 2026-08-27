@@ -5,6 +5,7 @@ import SplitText from "@/components/SplitText"
 import HeroBackground from "./HeroBackground";
 import GreetingCycle from "./GreetingCycle";
 import HeroButtons from "./HeroButtons";
+import SocialLinks from "./SocialLinks";
 
 function Hero() {
   return (
@@ -55,6 +56,7 @@ function Hero() {
         </p> 
 
         <HeroButtons/>
+        <SocialLinks/>
      </div>
         <HeroBackground/>
         
